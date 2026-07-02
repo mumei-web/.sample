@@ -1,178 +1,459 @@
 <!DOCTYPE html>
+<!-- 株式会社コニープライム コーポレートサイト -->
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ヘッドスパサロン Luana</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>株式会社コニープライム｜IT×AI×教育で、現場を動かす。</title>
+<meta name="description" content="株式会社コニープライムは、SES・システム開発、AI内製診断・ITコンサルティング、IT人材育成、ドローン活用の4事業で企業と技術者を支えます。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Murecho:wght@500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-  <meta name="google-site-verification" content="O3hoG726tvhX1asal-WGF4yoI_s49Vpb828jJnGC_mg" />
 </head>
-
 <body>
 
-<header>
-  <div class="hero">
-    <video autoplay muted loop playsinline class="hero-video">
-      <source src="images/795506401.041044.mp4" type="video/mp4">
-    </video>
-    <div class="hero-overlay"></div>
-
-   <div class="hero-text">
-  <p>〜極上のヘッドスパ体験を〜</p>
-  <h1>
-    【濡らすヘッドスパ専門店】<br>
-    ~寝てるだけで、若返る~<br>
-    Luana ~ルアナ~
-  </h1>
-     <a href="https://tol-app.jp/s/2vein6014q2k5wwbvw0y" class="hero-btn" target="_blank">今すぐ予約する</a>
+<!-- ========== HEADER ========== -->
+<header class="topbar" id="top">
+  <div class="wrap topbar-in">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true">CP</span>
+      <span class="brand-text">
+        <span class="jp">コニープライム</span>
+        <span class="en">CONIE PRIME CO., LTD.</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="メインメニュー">
+      <a href="#assessment">AI内製診断</a>
+      <a href="#business">事業内容</a>
+      <a href="#pricing">サブスクプラン</a>
+      <a href="#message">代表メッセージ</a>
+      <a href="#recruit">採用情報</a>
+      <a href="#news">News</a>
+    </nav>
+    <div class="topbar-cta">
+      <a href="#recruit" class="cta-ghost">採用情報</a>
+      <a href="#cta" class="cta-mini">無料相談する</a>
     </div>
+    <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-
-  <nav>
-    <a href="#about">SERVICE</a>
-    <a href="menu.html">MENU</a>
-    <a href="#gallery">GALLERY</a>
-    <a href="#staff">STAFF</a>
-    <a href="https://tol-app.jp/s/2vein6014q2k5wwbvw0y" target="_blank">RESERVE</a>
-    <a href="contact.html">CONTACT</a>
+  <nav class="nav-mobile" id="navMobile" aria-label="モバイルメニュー">
+    <a href="#assessment">AI内製診断</a>
+    <a href="#business">事業内容</a>
+    <a href="#pricing">サブスクプラン</a>
+    <a href="#message">代表メッセージ</a>
+    <a href="#recruit">採用情報</a>
+    <a href="#news">News</a>
+    <a href="#cta" class="cta-mini">無料相談する</a>
   </nav>
 </header>
 
-<section id="about">
-  <h2>SERVICE</h2>
-  <img src="images/spa3.jpg" alt="service">
-  <!-- PC用文章 -->
-  <p class="about-pc">
-    ヘッドスパサロン Luanaは<br>
-    “濡らすヘッドスパ専門店”として、頭皮と髪を濡らしながら<br>
-    血行促進と深いリラックス効果を実現します。
-  </p>
-  <!-- スマホ用文章 -->
-  <p class="about-sp">
-    ヘッドスパサロン Luanaは<br>
-    “濡らすヘッドスパ専門店”として、<br>
-    頭皮と髪を濡らしながら<br>
-    血行促進と深いリラックス効果を実現します。
-  </p>
-  <ul>
-    <li>◆ 頭皮を濡らしながら血行促進</li>
-    <li>◆ 深いリラックス効果</li>
-    <li>◆ プライベート空間で安心の施術</li>
-  </ul>
-</section>
+<main>
 
-<section id="point">
-  <h2>ABOUT</h2>
-  <div class="about-images">
-    <img src="images/spa12.jpg" alt="about1">
-    <img src="images/spa5.jpg" alt="about2">
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">IT × AI × 教育</span>
+        <h1>現場で使える技術を、<br><span class="hl">スピード感</span>を持って<br>実装する会社です。</h1>
+        <p class="lead">SES・システム開発を軸に、AIを使った「内製」の見極めから、人材育成、次世代のドローン活用まで。エンジニアが力を発揮できる環境と、企業が安心して任せられるパートナーシップを両立します。</p>
+        <div class="hero-cta">
+          <a href="#cta" class="btn-primary">無料で相談する <span class="arr">→</span></a>
+          <a href="#recruit" class="btn-secondary">採用情報を見る</a>
+        </div>
+        <div class="hero-tags">
+          <span class="htag">SES・受託開発</span>
+          <span class="htag">AI内製アセスメント</span>
+          <span class="htag">IT人材育成</span>
+          <span class="htag htag-sub">ドローン活用 <i class="drone-dot" aria-hidden="true"></i></span>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="media-placeholder ratio-16-9" data-label="HERO VIDEO">
+          <div class="mp-inner">
+            <svg class="mp-icon" viewBox="0 0 48 48" fill="none"><rect x="5" y="10" width="30" height="28" rx="3" stroke-width="2.2"/><path d="M35 19 L43 14 V34 L35 29" stroke-width="2.2" stroke-linejoin="round"/></svg>
+            <span class="mp-jp">素材準備中</span>
+            <span class="mp-en">VIDEO PENDING&nbsp;/&nbsp;16:9</span>
+          </div>
+        </div>
+        <div class="hero-float-card">
+          <span class="hf-num">04</span>
+          <span class="hf-text">事業領域<br>展開中</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AI内製診断 ========== -->
+  <section class="section assessment" id="assessment">
+    <div class="wrap assess-grid">
+      <div class="assess-copy reveal">
+        <span class="eyebrow">AI Assessment</span>
+        <h2>その「AI内製」、<br>本当に大丈夫ですか？</h2>
+        <p class="sec-lead">生成AIやノーコードツールで自作した業務の仕組みを、第三者のプロが○△×で見える化。続けるべきか、システム化すべきかを中立な立場で診断します。</p>
+        <ul class="assess-points">
+          <li><span class="ap-ico">1</span>特定ベンダー・特定AIに偏らない中立診断</li>
+          <li><span class="ap-ico">2</span>属人化・セキュリティリスクを事前に可視化</li>
+          <li><span class="ap-ico">3</span>過剰投資を防ぐ、ちょうどいい一手を提案</li>
+        </ul>
+        <a href="#cta" class="btn-primary">簡易診断を申し込む <span class="arr">→</span></a>
+      </div>
+
+      <!-- signature: AI diagnosis card, re-skinned bright -->
+      <div class="doc-frame reveal">
+        <div class="doc">
+          <div class="doc-head">
+            <div class="doc-title-wrap">
+              <span class="doc-scan"><i></i>AI SCAN</span>
+              <div class="doc-title">内製アセスメント</div>
+            </div>
+            <div class="doc-meta">NO. 2026-0413<br>診断対象 / SAMPLE Inc.</div>
+          </div>
+          <div class="doc-sub">対象：AI・ノーコードツールで内製した現在の業務</div>
+
+          <div class="line"><span class="name">問い合わせ・受注対応<span class="means">AIチャットで自動化</span></span><span class="verdict ok">○</span></div>
+          <div class="line"><span class="name">データ入力・集計<span class="means">手作業＋表計算ソフト</span></span><span class="verdict mid">△</span></div>
+          <div class="line"><span class="name">在庫・進捗の管理<span class="means">担当者個人のExcel</span></span><span class="verdict bad">×</span></div>
+          <div class="line"><span class="name">請求書・帳票の発行<span class="means">毎月の手作業</span></span><span class="verdict mid">△</span></div>
+          <div class="line"><span class="name">顧客データの管理<span class="means">各ツールに散在</span></span><span class="verdict bad">×</span></div>
+          <div class="line total"><span class="name">総合判定</span><span class="amt">2件 要システム化</span></div>
+
+          <!-- pen overlay, blue marker -->
+          <svg class="pen-svg" viewBox="0 0 400 460" preserveAspectRatio="none">
+            <ellipse class="draw d1" style="--len:320" cx="372" cy="244" rx="24" ry="21"/>
+            <ellipse class="draw d2" style="--len:320" cx="372" cy="353" rx="24" ry="21"/>
+            <path class="draw d3" style="--len:150" d="M248 432 q58 -14 116 -2"/>
+          </svg>
+          <div class="pen-note n1">件数増で<br>破綻リスク</div>
+          <div class="pen-note n2">属人化に<br>要注意</div>
+          <div class="pen-note n3">段階移行を推奨</div>
+          <div class="stamp">要<br>見極め</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BUSINESS ========== -->
+  <section class="section business" id="business">
+    <div class="wrap">
+      <span class="eyebrow">Business</span>
+      <h2 class="reveal">4つの事業で、<br class="sp-only">未来をかたちにする。</h2>
+      <p class="sec-intro reveal">開発の実行力を軸に、判断・育成・次世代技術までを一気通貫で提供しています。</p>
+
+      <div class="biz-grid">
+        <!-- 01 featured -->
+        <article class="biz-card biz-main reveal">
+          <div class="biz-media media-placeholder ratio-16-9" data-label="BUSINESS 01">
+            <div class="mp-inner">
+              <svg class="mp-icon" viewBox="0 0 48 48" fill="none"><rect x="6" y="14" width="36" height="9" rx="1.5" stroke-width="2.2"/><rect x="6" y="27" width="36" height="9" rx="1.5" stroke-width="2.2"/><circle cx="12" cy="18.5" r="1.6"/><circle cx="12" cy="31.5" r="1.6"/></svg>
+              <span class="mp-jp">素材準備中</span><span class="mp-en">IMAGE PENDING / 16:9</span>
+            </div>
+          </div>
+          <div class="biz-body">
+            <div class="biz-head">
+              <span class="biz-num">01 / MAIN</span>
+              <span class="biz-badge">主力事業</span>
+            </div>
+            <h3>SES・システム開発事業</h3>
+            <p>モダンな開発環境と豊富な案件ラインナップ。要件定義から保守運用まで、確かな技術力で企業のシステムを支えます。エンジニア一人ひとりのスキルと希望に合わせたアサインで、無理のないキャリア形成を実現。</p>
+            <ul class="biz-tags"><li>受託開発</li><li>SES常駐・派遣</li><li>保守・運用</li><li>クラウド構築</li></ul>
+          </div>
+        </article>
+
+        <article class="biz-card reveal">
+          <div class="biz-media media-placeholder ratio-4-3" data-label="BUSINESS 02">
+            <div class="mp-inner">
+              <svg class="mp-icon" viewBox="0 0 48 48" fill="none"><path d="M24 6 L40 13 V24 C40 34 33 40 24 43 C15 40 8 34 8 24 V13 Z" stroke-width="2.2" stroke-linejoin="round"/><path d="M17 24 L22 29 L32 18" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="mp-jp">素材準備中</span><span class="mp-en">IMAGE PENDING / 4:3</span>
+            </div>
+          </div>
+          <div class="biz-body">
+            <div class="biz-head"><span class="biz-num">02</span></div>
+            <h3>AI内製・ITコンサルティング事業</h3>
+            <p>AIツールでの内製が「このまま」か「システム化」か。中立な第三者の立場でアセスメントし、過剰投資を防ぐ最適な一手をご提案します。</p>
+          </div>
+        </article>
+
+        <article class="biz-card reveal">
+          <div class="biz-media media-placeholder ratio-4-3" data-label="BUSINESS 03">
+            <div class="mp-inner">
+              <svg class="mp-icon" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="15" r="7" stroke-width="2.2"/><path d="M10 41 C10 30 16 25 24 25 C32 25 38 30 38 41" stroke-width="2.2" stroke-linecap="round"/></svg>
+              <span class="mp-jp">素材準備中</span><span class="mp-en">IMAGE PENDING / 4:3</span>
+            </div>
+          </div>
+          <div class="biz-body">
+            <div class="biz-head"><span class="biz-num">03</span></div>
+            <h3>IT人材育成・教育事業</h3>
+            <p>未経験からでも即戦力へ。実務ベースの研修プログラムで、学校・企業・自治体それぞれの目的に合わせた学びを設計します。</p>
+          </div>
+        </article>
+
+        <article class="biz-card biz-sub reveal">
+          <div class="biz-media media-placeholder ratio-4-3" data-label="BUSINESS 04">
+            <div class="mp-inner">
+              <svg class="mp-icon" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="4.5" stroke-width="2.2"/><circle cx="10" cy="12" r="5" stroke-width="2.2"/><circle cx="38" cy="12" r="5" stroke-width="2.2"/><circle cx="10" cy="36" r="5" stroke-width="2.2"/><circle cx="38" cy="36" r="5" stroke-width="2.2"/><path d="M14 15 L21 21 M34 15 L27 21 M14 33 L21 27 M34 33 L27 27" stroke-width="2"/></svg>
+              <span class="mp-jp">素材準備中</span><span class="mp-en">IMAGE PENDING / 4:3</span>
+            </div>
+          </div>
+          <div class="biz-body">
+            <div class="biz-head"><span class="biz-num">04 / FUTURE</span></div>
+            <h3>ドローン活用ソリューション</h3>
+            <p>点検・測量・防災など、次世代の技術領域として着実に育成中。ITの知見とかけ合わせ、将来の事業の柱を育てています。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section class="section pricing" id="pricing">
+    <div class="wrap">
+      <span class="eyebrow">Subscription Plans</span>
+      <h2 class="reveal">月額定額で、<br class="sp-only">いつでも相談・開発サポート。</h2>
+      <p class="sec-intro reveal">単発の見積もりではなく、継続的な伴走を。事業のフェーズに合わせて選べる3つのサブスクプランをご用意しました。</p>
+
+      <div class="price-grid">
+        <div class="price-card reveal">
+          <span class="pc-tag">Light</span>
+          <h3>ライトプラン</h3>
+          <div class="pc-price"><span class="yen">¥55,000</span><span class="per">/ 月（税抜）</span></div>
+          <p class="pc-desc">月2時間までの相談枠。今の仕組みの相談相手が欲しい方に。</p>
+          <ul class="pc-list">
+            <li>月2時間までのオンライン相談</li>
+            <li>チャットでの簡易質問対応</li>
+            <li>簡易アセスメントレポート（年1回）</li>
+          </ul>
+          <a href="#cta" class="btn-outline">このプランで相談する</a>
+        </div>
+
+        <div class="price-card pc-featured reveal">
+          <span class="pc-recommend">Most Popular</span>
+          <span class="pc-tag">Standard</span>
+          <h3>スタンダードプラン</h3>
+          <div class="pc-price"><span class="yen">¥120,000</span><span class="per">/ 月（税抜）</span></div>
+          <p class="pc-desc">開発サポート込み。小規模な改修や運用も定額でお任せ。</p>
+          <ul class="pc-list">
+            <li>月8時間までの開発・相談枠</li>
+            <li>優先対応・チャット常時受付</li>
+            <li>四半期ごとの内製アセスメント</li>
+            <li>簡易な改修・保守対応込み</li>
+          </ul>
+          <a href="#cta" class="btn-primary">このプランで相談する</a>
+        </div>
+
+        <div class="price-card reveal">
+          <span class="pc-tag">Partner</span>
+          <h3>パートナープラン</h3>
+          <div class="pc-price"><span class="yen">要お見積もり</span></div>
+          <p class="pc-desc">継続開発・SES体制の構築まで。専属チームでの伴走が必要な方へ。</p>
+          <ul class="pc-list">
+            <li>専属エンジニアのアサイン相談</li>
+            <li>要件定義〜システム化まで一貫支援</li>
+            <li>月次の定例ミーティング</li>
+          </ul>
+          <a href="#cta" class="btn-outline">まずは相談する</a>
+        </div>
+      </div>
+      <p class="price-note">※ プランは事業内容・規模に応じてカスタマイズ可能です。まずは無料相談でお気軽にご相談ください。</p>
+    </div>
+  </section>
+
+  <!-- ========== MESSAGE & COMPANY ========== -->
+  <section class="section message" id="message">
+    <div class="wrap message-grid">
+      <div class="message-portrait reveal">
+        <div class="media-placeholder ratio-3-4" data-label="REPRESENTATIVE">
+          <div class="mp-inner">
+            <svg class="mp-icon" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="17" r="8" stroke-width="2.2"/><path d="M8 42 C8 30 15 24 24 24 C33 24 40 30 40 42" stroke-width="2.2" stroke-linecap="round"/></svg>
+            <span class="mp-jp">素材準備中</span><span class="mp-en">IMAGE PENDING / 3:4</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-copy reveal">
+        <span class="eyebrow">Message</span>
+        <h2>技術は、<br>人の可能性を広げる道具。</h2>
+        <p class="message-lead">「作れる」で終わらせず、「使い続けられる」かたちにする。それが私たちコニープライムの仕事です。</p>
+        <p class="message-body">AIやノーコードで誰もが手軽に仕組みを作れる時代だからこそ、現場を知るプロの目線が必要だと考えています。エンジニアには裁量と成長の場を、企業には安心して任せられるパートナーシップを。IT・AI・教育・ドローンという4つの領域から、これからも現場で使える技術を届けていきます。</p>
+        <div class="signature">
+          <span class="sig-role">代表取締役</span>
+          <span class="sig-name">佐藤　○○</span>
+        </div>
+
+        <dl class="company-table">
+          <div><dt>会社名</dt><dd>株式会社コニープライム</dd></div>
+          <div><dt>所在地</dt><dd>東京都足立区興野2丁目3-13</dd></div>
+          <div><dt>事業内容</dt><dd>SES・システム開発 / AI内製・ITコンサルティング / IT人材育成 / ドローン活用ソリューション</dd></div>
+          <div><dt>TEL</dt><dd>00-0000-0000（平日 9:00〜18:00）</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RECRUIT ========== -->
+  <section class="section recruit" id="recruit">
+    <div class="recruit-glow" aria-hidden="true"></div>
+    <div class="wrap recruit-grid">
+      <div class="recruit-copy reveal">
+        <span class="eyebrow on-ink">Recruit</span>
+        <h2>ここでなら、<br>技術者として伸びていける。</h2>
+        <p class="sec-lead on-ink">案件に「入れられる」だけの働き方はもう終わりに。裁量ある環境と、確かな成長機会をエンジニアに。</p>
+        <div class="recruit-points">
+          <div class="rp"><span class="rp-num">01</span><div><h4>豊富な案件と自由な選択</h4><p>SES常駐から自社開発まで、希望とスキルに合わせてアサインを相談できます。</p></div></div>
+          <div class="rp"><span class="rp-num">02</span><div><h4>学び続けられる環境</h4><p>AI活用やドローンなど新領域にも触れられる、教育事業を持つ会社ならではの成長機会。</p></div></div>
+          <div class="rp"><span class="rp-num">03</span><div><h4>納得感のある評価</h4><p>スキルとキャリアの希望を定期的にすり合わせ、着実にステップアップできる体制。</p></div></div>
+        </div>
+        <a href="#cta" class="btn-primary">採用エントリーはこちら <span class="arr">→</span></a>
+      </div>
+      <div class="recruit-visual reveal">
+        <div class="media-placeholder ratio-4-3 mp-dark" data-label="OFFICE">
+          <div class="mp-inner">
+            <svg class="mp-icon" viewBox="0 0 48 48" fill="none"><rect x="6" y="8" width="36" height="32" rx="2" stroke-width="2.2"/><path d="M6 18 H42 M16 8 V40 M28 8 V40" stroke-width="2.2"/></svg>
+            <span class="mp-jp">素材準備中</span><span class="mp-en">IMAGE PENDING / 4:3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEWS & COLUMN ========== -->
+  <section class="section news" id="news">
+    <div class="wrap">
+      <span class="eyebrow">News &amp; Column</span>
+      <h2 class="reveal">お知らせ・コラム</h2>
+      <div class="news-grid">
+        <article class="news-card reveal">
+          <div class="media-placeholder ratio-4-3" data-label="NEWS">
+            <div class="mp-inner"><span class="mp-jp small">素材準備中</span><span class="mp-en small">IMAGE PENDING</span></div>
+          </div>
+          <span class="news-tag tag-news">NEWS</span>
+          <time class="news-date">2026.07.01</time>
+          <h3>AI内製診断サービスの提供を開始しました</h3>
+        </article>
+        <article class="news-card reveal">
+          <div class="media-placeholder ratio-4-3" data-label="COLUMN">
+            <div class="mp-inner"><span class="mp-jp small">素材準備中</span><span class="mp-en small">IMAGE PENDING</span></div>
+          </div>
+          <span class="news-tag tag-column">COLUMN</span>
+          <time class="news-date">2026.06.18</time>
+          <h3>ノーコード内製が限界を迎える3つのサイン</h3>
+        </article>
+        <article class="news-card reveal">
+          <div class="media-placeholder ratio-4-3" data-label="NEWS">
+            <div class="mp-inner"><span class="mp-jp small">素材準備中</span><span class="mp-en small">IMAGE PENDING</span></div>
+          </div>
+          <span class="news-tag tag-news">NEWS</span>
+          <time class="news-date">2026.06.02</time>
+          <h3>新卒・中途エンジニア採用強化のお知らせ</h3>
+        </article>
+        <article class="news-card reveal">
+          <div class="media-placeholder ratio-4-3" data-label="COLUMN">
+            <div class="mp-inner"><span class="mp-jp small">素材準備中</span><span class="mp-en small">IMAGE PENDING</span></div>
+          </div>
+          <span class="news-tag tag-column">COLUMN</span>
+          <time class="news-date">2026.05.20</time>
+          <h3>SESパートナー選びで確認すべきポイント</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="section cta" id="cta">
+    <div class="wrap">
+      <span class="eyebrow">Contact</span>
+      <h2 class="reveal">まずは、話を聞くところから。</h2>
+      <p class="cta-lead reveal">企業のご担当者様も、エンジニア・SESパートナーの方も。目的に合わせてお気軽にお問い合わせください。</p>
+
+      <div class="cta-split">
+        <div class="cta-box cta-box-blue reveal">
+          <span class="cta-box-tag">企業のご担当者様へ</span>
+          <h3>無料相談・AI内製診断</h3>
+          <p>開発のご依頼、内製の見極め、サブスクプランのご相談はこちら。</p>
+          <a href="#" class="btn-primary btn-block">無料で相談する <span class="arr">→</span></a>
+        </div>
+        <div class="cta-box cta-box-red reveal">
+          <span class="cta-box-tag">エンジニア・SESパートナーの方へ</span>
+          <h3>採用エントリー</h3>
+          <p>案件のご紹介、キャリア相談、パートナー契約のご相談はこちら。</p>
+          <a href="#" class="btn-red btn-block">採用エントリーする <span class="arr">→</span></a>
+        </div>
+      </div>
+
+      <div class="contact-info">
+        <div class="ci-col">
+          <div class="ci-label">Tel</div>
+          <div class="ci-tel">00-0000-0000</div>
+          <div class="ci-hours">受付時間：平日 9:00〜18:00</div>
+        </div>
+        <div class="ci-col">
+          <div class="ci-label">Web検索</div>
+          <span class="search-term">コニープライム</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div class="f-brand">
+      <span class="brand-mark" aria-hidden="true">CP</span>
+      <div>
+        <div class="jp">株式会社コニープライム</div>
+        <div class="en">CONIE PRIME CO., LTD.</div>
+      </div>
+    </div>
+    <nav class="f-nav">
+      <a href="#business">事業内容</a>
+      <a href="#pricing">サブスクプラン</a>
+      <a href="#message">代表メッセージ</a>
+      <a href="#recruit">採用情報</a>
+      <a href="#news">News &amp; Column</a>
+      <a href="#cta">お問い合わせ</a>
+    </nav>
+    <div class="f-info">
+      東京都足立区興野2丁目3-13<br>
+      TEL 00-0000-0000（平日 9:00〜18:00）
+    </div>
   </div>
-
-  <!-- PC用文章 -->
-  <p class="about-pc">
-    ハワイのような落ち着いた雰囲気の空間で<br>
-    日常を忘れてゆったり過ごせる癒しのヘッドスパ。<br>
-    音・香り・手技のすべてが、あなたのリラックスを最大化します。
-  </p>
-
-  <!-- スマホ用文章 -->
-  <p class="about-sp">
-    ハワイのような落ち着いた雰囲気の空間で<br>
-    日常を忘れてゆったり過ごせる<br>
-    癒しのヘッドスパ。<br>
-    音・香り・手技のすべてが、<br>
-    あなたのリラックスを最大化します。
-  </p>
-</section>
-
-<section id="gallery">
-  <h2>GALLERY</h2>
-  <div class="gallery">
-    <div><img src="images/spa1.jpg" alt=""></div>
-    <div><img src="images/spa2.jpg" alt=""></div>
-    <div><img src="images/spa4.jpg" alt=""></div>
-    <div><img src="images/spa7.jpg" alt=""></div>
-    <div><img src="images/spa8.jpg" alt=""></div>
-    <div><img src="images/spa10.jpg" alt=""></div>
-    <div class="hide-sp"><img src="images/spa17.jpg" alt=""></div>
-    <div><img src="images/spa18.jpg" alt=""></div>
-    <div><img src="images/spa19.jpg" alt=""></div>
-  </div>
-  <!-- PC用文章 -->
-  <p class="about-pc">
-   エッセンシャルオイルの香りで心を癒し、スパで身体をほぐすことで、<br>
-  　心と身体の両方を同時にメンテナンスしていきます。<br>
-    日常の疲れをリセットし、心の健康と身体の健康を手に入れていただける時間をご提供します。
-  </p>
-
-  <!-- スマホ用文章 -->
-  <p class="about-sp">
-   エッセンシャルオイルの香りで心を癒し、<br>
-    スパで身体をほぐすことで、<br>
-    心と身体の両方を同時に<br>
-    メンテナンスしていきます。<br>
-    日常の疲れをリセットし、<br>
-    心の健康と身体の健康を手に入れていただける時間をご提供します。
-  </p>
-</section>
-
-<section id="instagram">
-  <h2>Instagram</h2>
-  <a href="https://www.instagram.com/luana_maiko_shelly/" target="_blank" class="insta-btn">
-    <i class="fa-brands fa-instagram"></i> Instagramを見る
-  </a>
-</section>
-
-<section id="menu">
-  <h2>SCHEDULE</h2>
-  <div class="schedule-img">
-    <img src="images/spa20.jpg" alt="schedule">
-  </div>
-</section>
-
-<section id="staff">
-  <h2>STAFF</h2>
-  <div class="spa-card">
-    <img src="images/spa11.jpg" alt="staff">
-  </div>
-  <div class="staff-card">
-    <h3>SHELLY</h3>
-    <p>
-      ムートンホイップ認定講師(新潟校)<br>
-      お客様の日頃の疲れを最大限に癒し、<br>
-      自分へのご褒美になる施術を提供できるよう<br>
-      日々心掛けています。
-    </p>
-  </div>
-</section>
-
-<section id="info">
-  <h2>RESERVE</h2>
-  <div class="reserve-center">
-    <a href="https://tol-app.jp/s/2vein6014q2k5wwbvw0y" class="reserve-btn" target="_blank">今すぐ予約する</a>
-  </div>
-</section>
-
-<section id="map">
-  <h2>ACCESS</h2>
-  <p class="address">
-    〒950-0861<br>
-    新潟県新潟市東区中山8丁目4-16 1F<br>
-    TEL 025-290-7990
-  </p>
-  <div class="map">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3147.7233417652424!2d139.0874111!3d37.9135288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff4cbd491cc6c4f%3A0x5db7b37e631eb9e1!2z44CSOTUwLTA4NjEg5paw5r2f55yM5paw5r2f5biC5p2x5Yy65Lit5bGx77yY5LiB55uu77yU4oiS77yR77yWIDFm!5e0!3m2!1sja!2sjp!4v1773441882358!5m2!1sja!2sjp"
-      allowfullscreen="" loading="lazy"></iframe>
-  </div>
-</section>
-
-<footer>
-  <p>© ヘッドスパサロン Luana</p>
+  <div class="wrap"><div class="copy">© 2026 CONIE PRIME CO., LTD. ALL RIGHTS RESERVED.</div></div>
 </footer>
 
+<script>
+  // mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navMobile = document.getElementById('navMobile');
+  navToggle.addEventListener('click', () => {
+    const open = navMobile.classList.toggle('open');
+    navToggle.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  navMobile.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navMobile.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', false);
+  }));
+
+  // scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in-view'));
+  }
+</script>
 </body>
 </html>
