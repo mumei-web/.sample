@@ -397,53 +397,202 @@ h2{font-size:clamp(1.7rem,3.3vw,2.5rem);}
 /* ============================================================
    PRICING
    ============================================================ */
-.pricing{background:var(--white);}
-.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px;align-items:stretch;}
-.price-card{
-  background:var(--bg-soft);border:1.5px solid var(--line);border-radius:18px;
-  padding:34px 30px;display:flex;flex-direction:column;position:relative;
-  transition:transform .2s ease, box-shadow .2s ease;
+.pricing {
+  background: var(--white);
 }
-.price-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-sm);}
-.pc-featured{
-  background:var(--ink);color:#fff;border-color:var(--ink);transform:scale(1.035);
-  box-shadow:var(--shadow-md);
-}
-.pc-featured:hover{transform:scale(1.035) translateY(-4px);}
-.pc-recommend{
-  position:absolute;top:-13px;left:50%;transform:translateX(-50%);
-  background:var(--red);color:#fff;font-family:var(--mono);font-size:.62rem;font-weight:700;
-  letter-spacing:.1em;padding:6px 16px;border-radius:100px;white-space:nowrap;
-}
-.pc-tag{
-  font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--brand);
-}
-.pc-featured .pc-tag{color:#6FE8BE;}
-.price-card h3{font-size:1.2rem;margin:12px 0 0;}
-.pc-price{display:flex;align-items:baseline;gap:6px;margin:20px 0 4px;font-family:var(--mono);font-weight:700;}
-.pc-price .yen{font-size:2.2rem;letter-spacing:-.02em;}
-.pc-price .per{font-size:.8rem;color:var(--ink-soft);font-weight:400;}
-.pc-featured .pc-price .per{color:#A8B6C9;}
-.pc-desc{font-size:.86rem;line-height:1.85;color:var(--ink-soft);margin:10px 0 0;}
-.pc-featured .pc-desc{color:#C3CEDE;}
-.pc-list{margin:22px 0 26px;display:flex;flex-direction:column;gap:11px;flex:1;}
-.pc-list li{
-  font-size:.85rem;padding-left:22px;position:relative;color:var(--ink);line-height:1.6;
-}
-.pc-featured .pc-list li{color:#E5EAF2;}
-.pc-list li::before{
-  content:"";position:absolute;left:0;top:.5em;width:11px;height:11px;
-  border-left:2px solid var(--brand);border-bottom:2px solid var(--brand);
-  transform:rotate(-45deg) translateY(-50%);
-}
-.pc-featured .pc-list li::before{border-color:#6FE8BE;}
-.pc-featured .btn-primary{background:var(--red);box-shadow:var(--shadow-red);}
-.pc-featured .btn-primary:hover{background:var(--red-deep);}
-.pc-featured .btn-outline{color:#6FE8BE;border-color:#6FE8BE;}
-.pc-featured .btn-outline:hover{background:#6FE8BE;color:var(--ink);}
-.price-note{text-align:center;font-size:.82rem;color:var(--ink-faint);margin-top:36px;}
 
+/* 2カラム（2つプラン）用に横並びを最適化 */
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 50px;
+  align-items: stretch;
+  max-width: 900px; /* 横に広がりすぎないよう中央に寄せる */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.price-card {
+  background: var(--bg-soft);
+  border: 1.5px solid var(--line);
+  border-radius: 18px;
+  padding: 34px 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* 右側の「要件整理・システム化支援プラン」を目立たせる設定 */
+.pc-featured {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+  transform: scale(1.02); /* 2カラムに合わせて少しだけ強調 */
+  box-shadow: var(--shadow-md);
+}
+
+.pc-featured:hover {
+  transform: scale(1.02) translateY(-4px);
+}
+
+.pc-recommend {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--red);
+  color: #fff;
+  font-family: var(--mono);
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  padding: 6px 16px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.pc-tag {
+  font-family: var(--mono);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+
+.pc-featured .pc-tag {
+  color: #6FE8BE;
+}
+
+.price-card h3 {
+  font-size: 1.2rem;
+  margin: 12px 0 0;
+}
+
+.pc-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin: 20px 0 4px;
+  font-family: var(--mono);
+  font-weight: 700;
+}
+
+.pc-price .yen {
+  font-size: 2.2rem;
+  letter-spacing: -.02em;
+}
+
+.pc-price .per {
+  font-size: .8rem;
+  color: var(--ink-soft);
+  font-weight: 400;
+}
+
+.pc-featured .pc-price .per {
+  color: #A8B6C9;
+}
+
+.pc-desc {
+  font-size: .86rem;
+  line-height: 1.85;
+  color: var(--ink-soft);
+  margin: 10px 0 0;
+}
+
+.pc-featured .pc-desc {
+  color: #C3CEDE;
+}
+
+.pc-list {
+  margin: 22px 0 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  flex: 1;
+}
+
+.pc-list li {
+  font-size: .85rem;
+  padding-left: 22px;
+  position: relative;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.pc-featured .pc-list li {
+  color: #E5EAF2;
+}
+
+.pc-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .5em;
+  width: 11px;
+  height: 11px;
+  border-left: 2px solid var(--brand);
+  border-bottom: 2px solid var(--brand);
+  transform: rotate(-45deg) translateY(-50%);
+}
+
+.pc-featured .pc-list li::before {
+  border-color: #6FE8BE;
+}
+
+.pc-featured .btn-primary {
+  background: var(--red);
+  box-shadow: var(--shadow-red);
+}
+
+.pc-featured .btn-primary:hover {
+  background: var(--red-deep);
+}
+
+.pc-featured .btn-outline {
+  color: #6FE8BE;
+  border-color: #6FE8BE;
+}
+
+.pc-featured .btn-outline:hover {
+  background: #6FE8BE;
+  color: var(--ink);
+}
+
+/* ボタンの位置をカードの一番下に揃えるための調整 */
+.price-card .btn-primary,
+.price-card .btn-outline {
+  width: 100%;
+  margin-top: auto;
+}
+
+.price-note {
+  text-align: center;
+  font-size: .82rem;
+  color: var(--ink-faint);
+  margin-top: 36px;
+}
+
+/* スマホ・タブレット（画面幅が狭いとき）は縦に1列で並べる */
+@media (max-width: 768px) {
+  .price-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .pc-featured {
+    transform: none;
+  }
+  .pc-featured:hover {
+    transform: translateY(-4px);
+  }
+}
 /* ============================================================
    MESSAGE & COMPANY
    ============================================================ */
